@@ -36,7 +36,7 @@ module MyAddr::Fellow{
       let quality:u64 = 78;
       let learning:u64 = 87;
       let f = MyAddr::Fellow::newClass(quality, learning);
-      let q = f.quality;
+      //let q = f.quality;
       debug::print(&f);
       }
 }

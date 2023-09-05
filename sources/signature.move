@@ -14,8 +14,8 @@ module MyAddr::signature{
   #[test(sn = @0x1)]
   public entry fun mainsign(sn:signer){
     // let a:signer = @ox42;
-    let addr = address_of(&sn);
-    //let addr = signer::address_of(&sn);
+    //let addr = address_of(&sn);
+    let addr = signer::address_of(&sn);
     debug::print<address>(&addr);
     }
 }
