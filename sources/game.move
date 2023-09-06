@@ -48,7 +48,7 @@ module MyAddr::game{
   }
 
   #[test(account = @0xACe, to = @0xBB)]
-  public entry fun script_fn_2(account:&signer, to:&signer) acquires GameStar{
+  public entry fun gameTest(account:&signer, to:&signer) acquires GameStar{
     let star:GameStar = MyAddr::game::newStar(b"Sneha", b"Bharat", 6);
     // let starNew:GameStar = MyAddr::game::newStar(b"Alice", b"India", 3);
     debug::print<GameStar>(&star);
