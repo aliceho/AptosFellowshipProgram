@@ -66,7 +66,10 @@ module MyAddr::Colln{
     MyAddr::Colln::add_item(&account);
     let collectionLength:u64 = MyAddr::Colln::size(&account);
     debug::print<u64>(&collectionLength);
-    MyAddr::Colln::destroy(&account)
+    MyAddr::Colln::destroy(&account);
+    MyAddr::Colln::destroy(&account);
+    let c:bool = MyAddr::Colln::existsAt(addr);
+    debug::print<bool>(&c);
   }
 
 }
