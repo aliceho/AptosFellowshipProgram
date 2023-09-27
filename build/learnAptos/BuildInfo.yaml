@@ -19,7 +19,8 @@ compiled_package_info:
     generate_abis: false
     install_dir: ~
     force_recompilation: false
-    additional_named_addresses: {}
+    additional_named_addresses:
+      MyAddr: f5ae926831d2781aaa2399d11b5317636afccfc7b3541a42a41eac90ab3fbd4f
     architecture: ~
     fetch_deps_only: false
     skip_fetch_latest_git_deps: false
