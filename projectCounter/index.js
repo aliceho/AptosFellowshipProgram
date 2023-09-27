@@ -29,7 +29,7 @@ const aptosCoin = '0x1::coin::CoinStore<0x1::aptos_coin::AptosCoin>';
     function:
       '0xf5ae926831d2781aaa2399d11b5317636afccfc7b3541a42a41eac90ab3fbd4f::MyCounter::incr_counter_by',
     type_arguments: [],
-    arguments: [6],
+    arguments: [10],
   };
   const txnRequest = await client.generateTransaction(
     account1.address(),
